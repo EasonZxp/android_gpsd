@@ -1,0 +1,13 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := client
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_SRC_FILES := client.c
+
+LOCAL_SHARED_LIBRARIES := libcutils libutils liblog
+
+
+include $(BUILD_EXECUTABLE)
